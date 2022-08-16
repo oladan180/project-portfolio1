@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(198, 207, 215);
+
+
+
+}
+.header{
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    margin: 20px;
+}
+li a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(101, 136, 170);
+}
+li{
+    list-style-type: none;
+
+}
+.img-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 10px 0;
+
+}
+
+.bar{
+    display: none;
+}
+.btn-1{
+    padding: 8px;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 6px blue;
+    border-radius: 8px;
+}
+.btn-1:active{
+    position: relative;
+    top: 2px;
+}
+.btn-1:hover{
+    background-color: rgb(89, 72, 199);
+}
+@media (max-width:900px) {
+    nav{
+        display: block;
+        height: auto;
+        text-align: center;
+        
+    }
+    ul{
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+
+
+    }
+    li{
+        margin: 10px 0;
+    }
+
+    /* Home */
+
+
+    
+}
+#home{
+    width: max-content;
+    gap: 30px;
+    margin: 100px auto;
+    padding: 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px auto);
+    background-color: rgba(250, 235, 215, 0.313);
+    border-radius: 25px;
+  
+
+}
+.one{
+    grid-column: 1;
+    grid-row: 1;
+    width: 400px;
+    height: 500px;
+    
+}
+.two{
+    grid-column:2 ;
+    grid-row: 1;
+    width: 400px;
+    height: 500px;
+
+}
+.three{
+    grid-column:3;
+    grid-row: 1;
+    width: 400px;
+    height: 500px;
+}
+.four{
+    grid-column: 1;
+    grid-row: 2;
+    width: 400px;
+    height: 500px;
+}
+.five{
+    grid-column: 2;
+    grid-row: 2;
+    width: 400px;
+    height: 500px;
+}
+.six{
+    grid-column: 3;
+    grid-row: 2;
+    width: 400px;
+    height: 500px;
+}
+#home img{
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px black;
+
+}
+@media (max-width:1500px) {
+    #home{
+        width:max-content;
+        display: block;
+        height:580px;
+        overflow: auto;
+    
+    
+   
+
+    }
+    img{
+        display: block;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    #About{
+        background-color:rgba(5, 4, 21, 0.926);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 5px;
+    }
+    h2{
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(174, 181, 187);
+        margin: 10px;
+    }
+    .about{
+    
+    }
+    .about p{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 1.3rem;
+        color: rgb(191, 198, 206);
+        margin: 10px;
+    }
+    .about img{
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+    #work{
+        background-color: rgba(250, 235, 215, 0.313);
+        border-radius: 20px;
+        margin: 30px 10px;
+        padding: 5px;
+      
+
+    }
+    #work p{
+        line-height: 1.3rem;
+        font-size: 15px;
+        margin: 10px 0;
+        padding: 5px;
+        border: solid 1px wheat;
+        background-color: rgb(206, 223, 223);
+        border-radius: 15px;
+        color: rgb(104, 110, 115);
+        
+
+
+    }
+    #contact ul{
+        background-color: black;
+        justify-content: center;
+        margin-bottom: 0;
+        
+        
+    }
+
+    .head{
+        width:60% ;
+        height: 120px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: azure;
+        border-radius: 15px;
+        font-weight: bold;
+
+
+
+    }
+    .head p{
+        margin: 0 10px;
+        font-size: 18px;
+        
+    }
+    .head button{
+        margin: 5px 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 7px;
+        background-color: green;
+        font-weight: bold;
+    }
+    .btn-active:active{
+        position: relative;
+        top: 1px;
+
+    }
+    .btn-active:hover{
+        background: linear-gradient(to left,greenyellow,green);
+    }
+    .game table{
+        margin: 50px auto;
+        border-collapse: collapse;
+        background-color: cadetblue;
+
+    }
+
+    .game td{
+        border: 5px solid black;
+        width: 200px;
+        height: 200px;
+        font-size: 200px;
+        line-height: 1.5rem;
+        font-weight: bolder;
+        text-align: center;
+        color: black;
+    }
+    
+
+
+
+ 
+
+    
+
+
+    
+}
